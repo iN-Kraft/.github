@@ -1,0 +1,40 @@
+[project]
+site_name = "iNKraft"
+site_description = "High-quality, production-ready Kotlin projects for every platform."
+site_author = "Jeff Retz"
+
+copyright = """
+Copyright &copy; 2025 Jeff Retz
+"""
+
+[project.theme]
+language = "en"
+custom_dir = "overrides"
+features = [
+    "content.code.annotate",
+    "content.code.copy",
+    "content.code.select",
+    "content.footnote.tooltips",
+    "content.tabs.link",
+    "content.tooltips",
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.path",
+    "navigation.sections",
+    "navigation.top",
+    "navigation.tracking",
+    "navigation.tabs",
+    "search.highlight",
+]
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
