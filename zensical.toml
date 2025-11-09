@@ -7,6 +7,14 @@ copyright = """
 Copyright &copy; 2025 Jeff Retz
 """
 
+nav = [
+    {"Home" = "index.md"},
+    {"About" = [
+        "about/index.md",
+        {"License" = "about/license.md"}
+    ]}
+]
+
 [project.theme]
 language = "en"
 custom_dir = "overrides"
@@ -26,6 +34,7 @@ features = [
     "navigation.top",
     "navigation.tracking",
     "navigation.tabs",
+    "navigation.indexes",
     "search.highlight",
 ]
 
@@ -38,3 +47,7 @@ toggle.name = "Switch to dark mode"
 scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
+
+[project.markdown_extensions.def_list]
+[project.markdown_extensions.pymdownx.tasklist]
+custom_checkbox = true
