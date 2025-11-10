@@ -37,6 +37,6 @@ We provide clean, "common" KMP APIs for complex tasks, built with a unique focus
 
     A fast, secure and URL-friendly unique ID generator.
 
-    [:octicons-arrow-right-24: Learn more](#)
+    [:octicons-arrow-right-24: Learn more](../libraries/nanoid.md)
 
 </div>
