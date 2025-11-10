@@ -1,0 +1,122 @@
+# Site
+site_name: iNKraft
+site_author: Jeff Retz
+site_description: High-quality, production-ready Kotlin projects for every platform.
+
+# Copyright
+copyright: Copyright &copy; 2025 Jeff Retz
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/DatL4g
+    - icon: other/polar
+      link: https://polar.sh/DatL4g
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/jeff-retz/
+  tags:
+    Android: android
+    JVM: jvm
+    Linux: linux
+    Apple: apple
+    Web: web
+    Windows: windows
+
+# Extensions
+markdown_extensions:
+  - attr_list
+  - tables
+  - admonition
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - docs/overrides/.icons
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - toc:
+      permalink: '#'
+  - md_in_html
+
+# Plugins
+plugins:
+  - tags
+
+# Navigation
+nav:
+  - Home:
+      - index.md
+  - About:
+      - about/index.md
+      - License: about/license.md
+
+# Theme
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo:
+    assets/logo.webp
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      toggle:
+        icon: lucide/sun
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      toggle:
+        icon: lucide/moon
+        name: Switch to light mode
+  font:
+    text: Manrope
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.top
+    - navigation.tabs
+    - navigation.path
+    - navigation.sections
+    - navigation.tracking
+    - content.tabs.link
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - search.highlight
+  icon:
+    admonition:
+      example: other/polar
+    tag:
+      android: material/android
+      jvm: material/language-java
+      linux: material/linux
+      apple: material/apple
+      web: fontawesome/brands/js-square
+      windows: material/microsoft-windows
