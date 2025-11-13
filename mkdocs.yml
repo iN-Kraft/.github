@@ -73,6 +73,12 @@ nav:
       - License: about/license.md
   - Libraries:
       - NanoId: libraries/nanoid.md
+  - Sponsors:
+      - Overview: sponsors/
+      - Access management: sponsors/access.md
+      - 'Payment & Billing': sponsors/payment.md
+      - Privacy: sponsors/privacy.md
+      - 'Runtime & Cancellation': sponsors/runtime.md
 
 # Theme
 theme:
