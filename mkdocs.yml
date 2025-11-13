@@ -10,7 +10,7 @@ copyright: Copyright &copy; 2025 Jeff Retz
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/DatL4g
+      link: https://github.com/iN-Kraft
     - icon: other/polar
       link: https://polar.sh/DatL4g
     - icon: fontawesome/brands/linkedin
@@ -69,8 +69,10 @@ nav:
   - Home:
       - index.md
   - About:
-      - about/index.md
+      - Overview: about/
       - License: about/license.md
+  - Libraries:
+      - NanoId: libraries/nanoid.md
 
 # Theme
 theme:
@@ -102,7 +104,6 @@ theme:
     - navigation.instant.progress
     - navigation.top
     - navigation.tabs
-    - navigation.path
     - navigation.sections
     - navigation.tracking
     - content.tabs.link
