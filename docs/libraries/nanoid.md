@@ -27,9 +27,29 @@ The following targets are supported:
 
 ## ✨ Features
 
-- **Fast & Compact:** Generates small, URL-safe IDs very quickly
-- **Secure:** Uses a cryptographically strong random number generator to ensure uniqueness and prevent collisions
-- **Customizable:** Allows you to specify the random number generator, the ID size and the alphabet
+NanoId comes with several features while beeing fully customizable.
+
+### 🔒 Secure
+
+NanoId uses Korlibs [Crypto SecureRandom](https://github.com/korlibs/korlibs-crypto){target="_blank"} to generate cryptographically strong random IDs with a proper distribution of characters.
+
+Crypto provides a `SecureRandom` class that extends the `kotlin.random.Random` class, but generating cryptographic secure values.
+
+- It uses `SecureRandom` on the JVM + `PRNGFixes` on Android.
+- On Native POSIX (including Linux, macOS, iOS) it uses `/dev/urandom`
+- On Windows `BCryptGenRandom` is in use
+
+### 📦 Compact
+
+NanoId generates compact IDs with just 21 characters.
+
+By using a larger alphabet than UUID, NanoId can generate a greater number of unique IDs, when compared to UUID, with fewer characters (21 vs 36).
+
+### 🖌️ Customizable
+
+NanoId is fully customizable.
+
+All default options may be overridden. Supply your own Random Number Generator, alphabet or size.
 
 ## 🚀 Installation
 
