@@ -15,16 +15,32 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/configure-pages@v5
-      - uses: actions/checkout@v5
-      - name: Checked Out
-        run: cat docs/app-ads.txt
-      - uses: actions/setup-python@v5
+      - name: Prepare Pages
+        uses: actions/configure-pages@v5
+
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Replace Google Profile Symlinks
+        run: |
+          cp -L --remove-destination docs/app-ads.txt docs/app-ads.txt
+          cp -L --remove-destination docs/apps-ads.txt docs/apps-ads.txt
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
           python-version: 3.x
-      - run: pip install zensical
-      - run: zensical build --clean
-      - uses: actions/upload-pages-artifact@v4
+
+      - name: Install Zensical
+        run: pip install zensical
+
+      - name: Build Static Site
+        run: zensical build --clean
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: site
-      - uses: actions/deploy-pages@v4
+
+      - name: Deploy Page
+        uses: actions/deploy-pages@v4
