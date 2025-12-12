@@ -23,8 +23,11 @@ jobs:
 
       - name: Replace Google Profile Symlinks
         run: |
-          cp -L --remove-destination docs/app-ads.txt docs/app-ads.txt
-          cp -L --remove-destination docs/apps-ads.txt docs/apps-ads.txt
+          cp -L docs/app-ads.txt docs/app-ads.txt.bak
+          mv docs/app-ads.txt.bak docs/app-ads.txt
+
+          cp -L docs/apps-ads.txt docs/apps-ads.txt.bak
+          mv docs/apps-ads.txt.bak docs/apps-ads.txt
 
       - name: Setup Python
         uses: actions/setup-python@v5
