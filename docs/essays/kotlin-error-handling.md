@@ -9,6 +9,12 @@
 
 We all know that error handling is one of **if not the** most essential parts of programming, because it defines what our application can actually handle and where it simply gives up.
 
+## TL;DR
+
+This article is really worth reading to truly understand error handling, however the most important part to internalize:
+
+**The moment a failure is expected, it stops being exceptional and that is where explicit error handling shines.**
+
 ## Exception Misconceptions
 
 The thing I never understood about Java, Kotlin and many other languages is their reliance on exceptions.
@@ -55,12 +61,13 @@ fun main() {
 }
 ```
 
-### So why are Exceptions mostly a Misconception?
+### Tell me why?
 
-Most of the time, using exceptions as a primary error-handling mechanism is a misconception.
+So what's wrong about it, aren't we handling errors here properly?  
 Our goal as developers is not to let applications crash in the worst case, it's to handle failures explicitly and predictably.
 Exceptions should be reserved for truly _exceptional_ situations: out-of-memory errors, JVM shutdowns, or job and thread cancellations.
 Anything else - invalid input, network failures, parsing errors - deserves explicit handling, so that failure paths are visible in the code and the program remains robust.
+And the worst part of the approach above? We aren't even required to catch the exceptions, the compiler and IDE might not even tell us to do so.
 
 ## No Common Ground
 
@@ -92,7 +99,7 @@ That's where **Arrow** comes in. With it's `Raise` API, Kotlin finally allows us
 - Compose error-prone operations seamlessly
 - Integrate with retry policies and structure recovery
 
-In short, Arrow's approach lets us write failure-aware programs that are both readable and robust, turning what was once a "beast" into something truly "beautyful".
+In short, Arrow's approach lets us write failure-aware programs that are both readable and robust, turning what was once a "beast" into something truly beautyful.
 
 ```kotlin title="Kotlin with Arrow Superpower"
 sealed interface AuthError {
@@ -101,7 +108,7 @@ sealed interface AuthError {
 }
 
 context(_: Raise<AuthError>)
-fun signIn(username: String, password: String) {
+fun signIn(username: String, password: String): String {
     if (password != "pass") {
         raise(AuthError.Credentials)
     }
@@ -110,10 +117,12 @@ fun signIn(username: String, password: String) {
     if (!successful) {
         raise(AuthError.Network)
     }
+    
+    return service.username()
 }
 
 fun main() {
-    recover({
+    val username: String = recover({
         signIn("user", "pass")
     }) { e: AuthError ->
         val message = when (e) {
@@ -128,3 +137,119 @@ fun main() {
 
 Obviously this example is highly simplified, but it already demonstrates the benefits of explicit error handling.
 For the first time, we can clearly see which methods may fail and exactly what kind of errors they can produce.
+
+## Resilience: Retries without losing control
+
+Explicit error handling becomes especially valuable once failures stop being purely local.
+Network requests fail, services time out and transient errors are simply part of running distributed systems.
+In exception-based code, retry logic is often bolted on afterwards using `try/catch` blocks, making control flow harder to follow and error handling even more implicit.
+Arrow takes a different approach: retries are modeled explicitly and remain part of the same typed error flow.
+
+```kotlin title="Kotlin Sign-In with retries"
+context(_: Raise<AuthError>)
+fun signInWithRetry(username: String, password: String): String {
+    return Schedule.exponential<AuthError>(DURATION)
+        .and(Schedule.recurs(MAX_RETRIES))
+        .jittered()
+        .doWhile { e: AuthError, _ -> e.isRetryable() }
+        .retryRaise { signIn(username, password) }
+        .bind()
+}
+```
+
+### Breaking down `signInWithRetry`
+
+```kotlin
+context(_: Raise<AuthError>)
+```
+
+This declares that the function runs in a context where failures of type `AuthError` can be raised.
+Instead of throwing exceptions, the function can explicitly signal errors using `raise` and callers are required to handle them.
+
+---
+
+```kotlin
+fun signInWithRetry(username: String, password: String)
+```
+
+A regular Kotlin function that performs a sign-in operation, enhanced with retry logic.
+
+---
+
+```kotlin
+Schedule.exponential<AuthError>(DURATION)
+```
+
+Creates a retry schedule with an exponential backoff.
+Each retry waits longer than the previous one, which is a common strategy for network related failures.
+
+---
+
+```kotlin
+.and(Schedule.recurs(MAX_RETRIES))
+```
+
+Limits the schedule to a maximum number of retry attempts.
+Without this, retries could continue indefinitely.
+
+---
+
+```kotlin
+.jittered()
+```
+
+Adds a small amount of randomness to the retry delays.
+This helps avoid retry storms when many clients fail at the same time.
+
+---
+
+```kotlin
+.doWhile { e: AuthError, _ -> e.isRetryable() }
+```
+
+Specifies which errors are allowed to trigger a retry.
+Only retryable errors (for example network failures) will be retried, all others fail immediately.
+
+---
+
+```kotlin
+.retryRaise { signIn(username, password) }
+```
+
+Executes the signIn operation using the defined retry policy.
+If `signIn` raises a retryable error, the schedule decides whether and when to retry.
+
+---
+
+```kotlin
+.bind()
+```
+
+Extracts the successful result or propagates the final error.
+If all retries fail, the error is raised to the caller in a controlled, typed way - no exceptions involved.
+
+## When to use `Raise` and when not to
+
+Not every failure should be modeled the same way and Arrow is not a replacement for every exception in the JVM.
+The key distinction is whether a failure is part of the programs expected behavior or a fundamental breakdown of the runtime.
+
+Use `Raise` (or other explicit error models) for domain and application-level failures: invalid input, authentication failures, network errors, parsing issues or any situation the application is expected to encounter and handle gracefully.
+These failures should be visible in the code, typed and composable - exactly what `Raise` is designed for.
+
+Exceptions, on the other hand, should be reserved for truly exceptional situations, like mentioned earlier: out-of-memory errors, JVM shutdown, job or thread cancellation or violations of internal invariants that indicate a programming bug.
+These are not recoverable in a meaningful way and should not be part of an applications normal control flow.
+
+**Always remember:** The moment a failure is expected, it stops being exceptional and that is where explicit error handling shines.
+
+## Conclusion
+
+Error handling is not a secondary concern or an implementation detail, it is a core part of application design.
+The way a language models failure directly influences how predictable, testable and resilient our systems become.
+
+On the JVM, exception-based error handling has long been the default, but as we've seen, it often hides control flow, encourages inconsistency and makes failures harder to reason about.
+
+Kotlin gives us better tools than Java ever had, but real clarity only emerges when failures are treated as first-class values.
+Arrows `Raise` API demonstrates that explicit, typed error handling does not have to come at the cost of readability or ergonomics.
+
+The "beast" of error handling isn't failure itself, but ambiguity.
+Once failures are made explicit, predictable and intentional, they stop being something to fear and become just another part of the programs logic - something we can reason about, test and improve.

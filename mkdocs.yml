@@ -79,7 +79,7 @@ nav:
       - 'Payment & Billing': sponsors/payment.md
       - Privacy: sponsors/privacy.md
       - 'Runtime & Cancellation': sponsors/runtime.md
-  - Essays:
+  - Articles:
       - Error Handling: essays/kotlin-error-handling.md
 
 # Theme
