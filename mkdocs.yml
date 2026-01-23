@@ -84,7 +84,7 @@ nav:
       - Privacy: sponsors/privacy.md
       - 'Runtime & Cancellation': sponsors/runtime.md
   - Articles:
-      - Error Handling: essays/kotlin-error-handling.md
+      - Error Handling: articles/kotlin-error-handling.md
 
 # Theme
 theme:

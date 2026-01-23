@@ -169,16 +169,3 @@ Exceptions, on the other hand, should be reserved for truly exceptional situatio
 These are not recoverable in a meaningful way and should not be part of an applications normal control flow.
 
 **Always remember:** The moment a failure is expected, it stops being exceptional and that is where explicit error handling shines.
-
-## Conclusion
-
-Error handling is not a secondary concern or an implementation detail, it is a core part of application design.
-The way a language models failure directly influences how predictable, testable and resilient our systems become.
-
-On the JVM, exception-based error handling has long been the default, but as we've seen, it often hides control flow, encourages inconsistency and makes failures harder to reason about.
-
-Kotlin gives us better tools than Java ever had, but real clarity only emerges when failures are treated as first-class values.
-Arrows `Raise` API demonstrates that explicit, typed error handling does not have to come at the cost of readability or ergonomics.
-
-The "beast" of error handling isn't failure itself, but ambiguity.
-Once failures are made explicit, predictable and intentional, they stop being something to fear and become just another part of the programs logic - something we can reason about, test and improve.
