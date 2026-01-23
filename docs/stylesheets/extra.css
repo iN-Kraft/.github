@@ -1,0 +1,54 @@
+.kotlin {
+    color: #7F52FF;
+}
+
+.compose {
+    color: #4285F4;
+}
+
+.git {
+    color: #F05032;
+}
+
+.firebase {
+    color: #DD2C00;
+}
+
+.supabase {
+    color: #3FCF8E;
+}
+
+.gradle {
+    color: #02303A;
+}
+
+.javascript {
+    color: #F7DF1E;
+}
+
+.portrait {
+    border-radius: 15px;
+}
+
+.button-github {
+    background-color: #181717 !important;
+    color: #FFFFFF !important;
+}
+
+.button-instagram {
+    background-color: #FF0069 !important;
+    color: #FFFFFF !important;
+}
+
+.button-linkedin {
+    background-color: #0a66c2 !important;
+    color: #FFFFFF !important;
+}
+
+.php {
+    color: #777BB4;
+}
+
+.proxmox {
+    color: #E57000;
+}
