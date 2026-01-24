@@ -24,10 +24,10 @@ Currently I balance university studies with self-employment, specializing in the
 My career began in Web Development using the Zend Framework (now Laminas) and Laravel.  
 During this time, I designed and built tools like customer and contract management for well-known brands.
 
-### :simple-proxmox:{ .proxmox } Virtual Machines
+### :simple-proxmox:{ .proxmox } Product Line Engineering
 
 Later I transitioned to the leading comapny for Product Line Engineering as an Admin and IT Operations specialist for the _pure::variants_ team.  
-Responsibilities included maintaining and eventually reworking a Java WebService used to manage Virtual Machines for product showcases and integrations.
+Responsibilities included maintaining and eventually reworking a Java WebService used to manage Virtual Machines for product showcases, integrations and customer playgrounds.
 
 # Tech Stack
 

@@ -5,6 +5,21 @@
 {% block tabs %}
   {{ super() }}
   <style>.md-header{position:initial}.md-main__inner{margin:0}.md-content{display:none}@media screen and (min-width:60em){.md-sidebar--secondary{display:none}}@media screen and (min-width:76.25em){.md-sidebar--primary{display:none}}</style>
+  <style>
+    .md-main {
+      flex-grow: 0;
+    }
+    
+    .mdx-container {
+      flex-grow: 1;
+      align-items: center;
+      align-content: center;
+    }
+    
+    .mdx-hero__content {
+      margin: 0 0.8rem 1.2rem;
+    }
+  </style>
   <section class="mdx-container">
     <div class="md-grid md-typeset">
       <div class="mdx-hero">
@@ -24,7 +39,6 @@
 {% endblock %}
 
 {% block content %}
-{{ super() }}
 {% endblock %}
 
 {% block footer %}{% endblock %}

@@ -124,6 +124,7 @@ theme:
     - content.code.select
     - search.highlight
   icon:
+    repo: fontawesome/brands/github
     admonition:
       example: other/polar
     tag:
