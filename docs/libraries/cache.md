@@ -1,4 +1,14 @@
-# Cache
+---
+tags:
+  - Android
+  - JVM
+  - Apple
+  - Linux
+  - Web
+  - Windows
+---
+
+# 🗄️ Cache
 
 A high-performance, coroutine-based cache library for Kotlin Multiplatform.  
 It is designed for high concurrency and thread-safety, offering flexible configurations for size, time and policy-based eviction.

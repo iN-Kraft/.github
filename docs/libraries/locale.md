@@ -1,3 +1,13 @@
+---
+tags:
+  - Android
+  - JVM
+  - Apple
+  - Linux
+  - Web
+  - Windows
+---
+
 # 🌍 Locale
 
 A simple, serializable and modern Kotlin data class for handling locales.  

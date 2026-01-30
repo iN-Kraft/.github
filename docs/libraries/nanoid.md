@@ -8,7 +8,7 @@ tags:
   - Windows
 ---
 
-# NanoId
+# 🎲 NanoId
 
 A Kotlin Multiplatform port of [this JavaScript library](https://github.com/ai/nanoid){target="_blank"}, providing a fast, secure and URL-friendly unique ID generator.
 
