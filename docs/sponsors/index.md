@@ -10,16 +10,16 @@ iNKraft Sponsors is packed with additional projects that are exclusively availab
 
 Our sponsors currently enjoy access to the following sponsorware projects. New projects are added regularly, so be sure to check back from time to time to stay updated.
 
-- [x] [Cache](../libraries/cache.md)
-- [x] [Locale](../libraries/locale.md)
-- [x] [Native-Kommons](../libraries/native-kommons.md)
+- [x] [Cache](../projects/cache.md)
+- [x] [Kotlin Native Interface](../projects/kni.md)
+- [x] [Locale](../projects/locale.md)
+- [x] [Sealed](../projects/sealed.md)
 
 ### Free projects
 
 The following projects are free to use already and do'nt require an active sponsorship:
 
-- [x] [NanoId](../libraries/nanoid.md)
-- [x] [Utils](../libraries/utils.md)
+- [x] [NanoId](../projects/nanoid.md)
 
 ## What's coming next?
 
@@ -41,4 +41,3 @@ As a sponsor, you'll enjoy additional benefits that are not available to our fre
 
 - [x] Prioritized bug reports to keep your projects running smoothly
 - [x] Private support via email for any questions
-

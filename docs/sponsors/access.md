@@ -3,12 +3,6 @@
 iNKraft provides private repositories hosted on GitHub and access is, therefore, managed through GitHub.
 This section covers everything you need to know in order to gain access to the private repositories.
 
-!!! example "Polar"
-
-    This section is focused on GitHub and GitHub Sponsorship.
-    Most of the points mentioned here also apply to Polar, including access rules, benefits and general procedures.
-    When sponsoring using Polar, make sure your GitHub account is connected.
-
 ## How to get access
 
 As the private repositories are hosted on GitHub, you require a GitHub account to become a sponsor and gain access.

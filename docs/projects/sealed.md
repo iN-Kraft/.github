@@ -10,7 +10,7 @@ tags:
 
 # 🗃️ SealedKommons
 
-A modern, KSP-based alternative to [sealed-enum](https://github.com/livefront/sealed-enum){target="_blank"} for Kotlin Multiplatform. 
+A modern KSP-based alternative to [sealed-enum](https://github.com/livefront/sealed-enum){target="_blank"} for Kotlin Multiplatform. 
 It's not as feature-rich as sealed-enum yet, but it contains the most important part: **generating a list of entries**.
 
 ## 🎯 Supported Targets

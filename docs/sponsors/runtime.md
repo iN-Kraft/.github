@@ -3,12 +3,6 @@
 The sponsorship model for iNKraft is facilitated through GitHub Sponsors and, therefore, adheres to GitHub's policies.
 If you're curious about the duration of your sponsorship and the cancellation process, you will find everything you need to know below.
 
-!!! example "Polar"
-
-    This section is focused on GitHub and GitHub Sponsorship.
-    Most of the points mentioned here also apply to Polar, including access rules, benefits and general procedures.
-    When sponsoring using Polar, make sure your GitHub account is connected.
-
 ## Runtime
 
 Sponsorships remain valid as long as monthly or yearly subscriptions are active and only expire when you cancel the sponsorship or when your payment method expires.
@@ -33,7 +27,7 @@ You will no longer receive updates.
 !!! danger "GitHub deletes private forks"
 
     Please note that once you lose your collaborator status, GitHub will automatically delete your private fork of the iNKraft repositories.
-    The extended usage of the latest version available to you at the time of cancellation is prohibited!
+    The extended usage of the latest version available to you at the time of cancellation is allowed, but keep in mind that you may not be able to access the latest features or updates.
 
 ### Automatic cancellattion
 

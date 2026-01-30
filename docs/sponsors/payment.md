@@ -4,12 +4,6 @@ Since we host the repositories on GitHub including the packages, GitHub Sponsors
 
 Therefore, to become a sponsor of iNKraft, a GitHub account is mandatory.
 
-!!! example "Polar"
-
-    This section is focused on GitHub and GitHub Sponsorship.
-    Most of the points mentioned here also apply to Polar, including access rules, benefits and general procedures.
-    When sponsoring using Polar, make sure your GitHub account is connected.
-
 ## Payment
 
 GitHub Sponsors currently only accepts payments via credit card, as they removed support for PayPal at the beginning of 2023.

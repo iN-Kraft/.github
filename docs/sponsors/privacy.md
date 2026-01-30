@@ -3,12 +3,6 @@
 Transparency is at the heart of our sponsorware model, which includes our funding goals, the features we are working towards and, importantly the acknowledgment of our sponsors.
 As a sponsor, you can support our projects either publicly or privately, according to your preference.
 
-!!! example "Polar"
-
-    This section is focused on GitHub and GitHub Sponsorship.
-    Most of the points mentioned here also apply to Polar, including access rules, benefits and general procedures.
-    When sponsoring using Polar, make sure your GitHub account is connected.
-
 ## Public sponsors
 
 By default, GitHub lists all sponsorships publicly.

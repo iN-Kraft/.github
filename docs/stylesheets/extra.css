@@ -1,54 +1,56 @@
 .kotlin {
-    color: #7F52FF;
+    color: #7f52ff;
 }
 
 .compose {
-    color: #4285F4;
+    color: #4285f4;
 }
 
 .git {
-    color: #F05032;
+    color: #f05032;
 }
 
 .firebase {
-    color: #DD2C00;
+    color: #dd2c00;
 }
 
 .supabase {
-    color: #3FCF8E;
+    color: #3fcf8e;
 }
 
 .gradle {
-    color: #02303A;
+    color: #02303a;
 }
 
 .javascript {
-    color: #F7DF1E;
+    color: #f7df1e;
 }
 
 .portrait {
     border-radius: 15px;
+    width: clamp(120px, 30vw, 288px);
+    height: auto;
 }
 
 .button-github {
     background-color: #181717 !important;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
 
 .button-instagram {
-    background-color: #FF0069 !important;
-    color: #FFFFFF !important;
+    background-color: #ff0069 !important;
+    color: #ffffff !important;
 }
 
 .button-linkedin {
     background-color: #0a66c2 !important;
-    color: #FFFFFF !important;
+    color: #ffffff !important;
 }
 
 .php {
-    color: #777BB4;
+    color: #777bb4;
 }
 
 .proxmox {
-    color: #E57000;
+    color: #e57000;
 }

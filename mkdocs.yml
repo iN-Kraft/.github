@@ -20,6 +20,7 @@ extra:
     JVM: jvm
     Linux: linux
     Apple: apple
+    MacOS: macos
     Web: web
     Windows: windows
 
@@ -74,13 +75,14 @@ nav:
       - index.md
   - About:
       - Overview: about/
+      - Setup: about/setup.md
       - License: about/license.md
-  - Libraries:
-      - Cache: libraries/cache.md
-      - Kotlin Native Interface: libraries/kni.md
-      - Locale: libraries/locale.md
-      - NanoId: libraries/nanoid.md
-      - Sealed: libraries/sealed.md
+  - Projects:
+      - Cache: projects/cache.md
+      - Kotlin Native Interface: projects/kni.md
+      - Locale: projects/locale.md
+      - NanoId: projects/nanoid.md
+      - Sealed: projects/sealed.md
   - Sponsors:
       - Overview: sponsors/
       - Access management: sponsors/access.md
