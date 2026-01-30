@@ -22,7 +22,7 @@ extra:
     Apple: apple
     Web: web
     Windows: windows
-    
+
 extra_css:
   - stylesheets/extra.css
 
@@ -60,7 +60,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - toc:
-      permalink: '#'
+      permalink: "#"
   - md_in_html
   - pymdownx.blocks.caption
 
@@ -76,13 +76,16 @@ nav:
       - Overview: about/
       - License: about/license.md
   - Libraries:
+      - Cache: libraries/cache.md
+      - Locale: libraries/locale.md
       - NanoId: libraries/nanoid.md
+      - Sealed: libraries/sealed.md
   - Sponsors:
       - Overview: sponsors/
       - Access management: sponsors/access.md
-      - 'Payment & Billing': sponsors/payment.md
+      - "Payment & Billing": sponsors/payment.md
       - Privacy: sponsors/privacy.md
-      - 'Runtime & Cancellation': sponsors/runtime.md
+      - "Runtime & Cancellation": sponsors/runtime.md
   - Articles:
       - Error Handling: articles/kotlin-error-handling.md
 
@@ -90,8 +93,7 @@ nav:
 theme:
   name: material
   custom_dir: docs/overrides
-  logo:
-    assets/logo.webp
+  logo: assets/logo.webp
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
