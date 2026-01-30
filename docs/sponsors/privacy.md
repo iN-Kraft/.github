@@ -1,7 +1,7 @@
 # Privacy
 
 Transparency is at the heart of our sponsorware model, which includes our funding goals, the features we are working towards and, importantly the acknowledgment of our sponsors.
-As a sponsor, you can support our projects either publicly or privately, according to your preference.
+As a [sponsor](https://github.com/sponsors/DatL4g), you can support our projects either publicly or privately, according to your preference.
 
 ## Public sponsors
 

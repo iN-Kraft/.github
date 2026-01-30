@@ -1,12 +1,12 @@
 # Access management
 
-iNKraft provides private repositories hosted on GitHub and access is, therefore, managed through GitHub.
+iNKraft provides private repositories hosted on GitHub and access is, therefore, managed through [GitHub](https://github.com/sponsors/DatL4g).
 This section covers everything you need to know in order to gain access to the private repositories.
 
 ## How to get access
 
-As the private repositories are hosted on GitHub, you require a GitHub account to become a sponsor and gain access.
-After sponsoring iNKraft on one of our sponsoring tiers starting at $4 a month, you'll get access to the private repositories.
+As the private repositories are hosted on GitHub, you require a GitHub account to become a [sponsor](https://github.com/sponsors/DatL4g) and gain access.
+After sponsoring iNKraft on one of our sponsoring tiers starting at $4 a month, you'll get access to the [private repositories](https://github.com/iN-Kraft/Native-Kommons).
 
 ### Individuals
 

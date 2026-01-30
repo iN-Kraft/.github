@@ -15,6 +15,8 @@ Our sponsors currently enjoy access to the following sponsorware projects. New p
 - [x] [Locale](../projects/locale.md)
 - [x] [Sealed](../projects/sealed.md)
 
+[Sponsor on GitHub](https://github.com/sponsors/DatL4g){ .md-button .md-button--primary }
+
 ### Free projects
 
 The following projects are free to use already and do'nt require an active sponsorship:
