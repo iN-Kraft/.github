@@ -6,7 +6,7 @@ tags:
   - Windows
 ---
 
-# Kotlin Native Interface
+# 🧩 Kotlin Native Interface
 
 A powerful Kotlin Multiplatform library designed to simplify and unify JNI (Java Native Interface) development across Android, MacOS, Linux and Windows platforms.
 

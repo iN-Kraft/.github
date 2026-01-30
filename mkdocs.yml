@@ -2,6 +2,7 @@
 site_name: iNKraft
 site_author: Jeff Retz
 site_description: High-quality, production-ready Kotlin projects for every platform.
+site_url: https://datlag.dev
 
 # Copyright
 copyright: Copyright &copy; 2025 Jeff Retz
@@ -96,6 +97,7 @@ nav:
 theme:
   name: material
   custom_dir: docs/overrides
+  favicon: assets/ico/favicon-48x48.ico
   logo: assets/logo.webp
   palette:
     # Palette toggle for light mode
@@ -119,6 +121,7 @@ theme:
     - navigation.indexes
     - navigation.instant
     - navigation.instant.progress
+    - navigation.instant.prefetch
     - navigation.top
     - navigation.tabs
     - navigation.sections
