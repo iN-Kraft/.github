@@ -23,7 +23,7 @@ For questions regarding payment issues or for more detailed information about yo
 ## Discounts
 
 Unfortunately, we can't offer discounts.
-To ensure that everyone in the community can afford to become a sponsor, we keep the barrier low and set prices as low as possible, starting at $9 a month for personal accounts and at $14 a month for organizations.
+To ensure that everyone in the community can afford to become a sponsor, we keep the barrier low and set prices as low as possible, starting at $4 a month for personal accounts and small teams (up to 100 employees) and at $9 a month for organizations.
 
 ## Billing cycle
 

@@ -6,7 +6,7 @@ This section covers everything you need to know in order to gain access to the p
 ## How to get access
 
 As the private repositories are hosted on GitHub, you require a GitHub account to become a sponsor and gain access.
-After sponsoring iNKraft on one of our sponsoring tiers starting at $9 a month, you'll get access to the private repositories.
+After sponsoring iNKraft on one of our sponsoring tiers starting at $4 a month, you'll get access to the private repositories.
 
 ### Individuals
 
