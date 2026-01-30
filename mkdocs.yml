@@ -77,6 +77,7 @@ nav:
       - License: about/license.md
   - Libraries:
       - Cache: libraries/cache.md
+      - Kotlin Native Interface: libraries/kni.md
       - Locale: libraries/locale.md
       - NanoId: libraries/nanoid.md
       - Sealed: libraries/sealed.md
@@ -134,5 +135,6 @@ theme:
       jvm: material/language-java
       linux: material/linux
       apple: material/apple
+      macos: material/apple
       web: fontawesome/brands/js-square
       windows: material/microsoft-windows

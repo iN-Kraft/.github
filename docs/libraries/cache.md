@@ -62,4 +62,51 @@ Then add the dependency to your module:
 
 ## 🛠️ Usage
 
-TBD
+You can initialize the cache with a type-safe DSL. The `maxSize` parameter is mandatory, while additional configuration options are optional.
+
+=== "InMemory"
+
+    ```kotlin
+    val cache = InMemoryCache<Int, String>(maxSize = 100) {
+        evictionPolicy = EvictionPolicy.LRU
+        expireAfterWriteDuration = 15.minutes
+    }
+    ```
+
+The cache interface follows the suspend-first approach, providing common methods for cache as suspending operations.
+
+```kotlin
+suspend fun getCachedTitle(id: Int): String {
+    return cache.get(id) ?: "Default Title"
+}
+
+suspend fun putCachedTitle(id: Int, title: String) {
+    cache.put(id, title)
+}
+```
+
+The `get` and `put` methods are also available as operator functions, like this:
+
+```kotlin
+suspend fun getCachedTitle(id: Int): String {
+    return cache[id] ?: "Default Title"
+}
+
+suspend fun putCachedTitle(id: Int, title: String) {
+    cache[id] = title
+}
+```
+
+=== "InMemory"
+
+    If you are calling the cache from a context where `suspend` is not available, you can use the non-suspending `try...` methods.
+
+    ```kotlin
+    fun getOnMainThread(id: Int): String? {
+        return cache.tryGet(id)
+    }
+
+    fun putOnMainThread(id: Int, title: String) {
+        cache.tryPut(id, title)
+    }
+    ```
