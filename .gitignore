@@ -1,3 +1,7 @@
 site
 .venv
 .cache
+.idea
+.python-version
+pyproject.toml
+uv.lock

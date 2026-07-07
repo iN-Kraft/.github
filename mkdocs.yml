@@ -12,8 +12,8 @@ extra:
   social:
     - icon: fontawesome/brands/github-alt
       link: https://github.com/iN-Kraft
-    - icon: other/polar
-      link: https://polar.sh/DatL4g
+    - icon: fontawesome/brands/patreon
+      link: https://www.patreon.com/c/datlag
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/jeff-retz/
   tags:
@@ -133,8 +133,6 @@ theme:
     - search.highlight
   icon:
     repo: fontawesome/brands/github
-    admonition:
-      example: other/polar
     tag:
       android: material/android
       jvm: material/language-java

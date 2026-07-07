@@ -33,7 +33,7 @@ Given our limited resources as a small team, we are unable to review and sign ND
 We advise those requiring such agreeements to consult [our promsie](#our-promise) for reassurance.
 Additionally, please contact us if you have any questions at [contact@datlag.dev](mailto:contact@datlag.dev).
 
-## Out promise
+## Our promise
 
 We recognize the importance of privacy for our organizational sponsors, especially in the absence of formal agreements like NDAs.
 "Our Promise" is our assurance of commitment to your confidentiality and discretion.

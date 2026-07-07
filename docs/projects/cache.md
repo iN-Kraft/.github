@@ -47,8 +47,16 @@ Integration using Version Catalog is highly recommended for aligned version usag
 
     ```toml
     [libraries]
-    kommons-cache = { group = "dev.datlag.kommons", name = "cache", version.ref = "kommons" }
+    kommons-cache = { group = "dev.datlag.kommons", name = "cache", version.ref = "cache" }
     ```
+
+=== "File"
+
+    Under Development
+
+=== "KTOR"
+
+    Under Development
 
 Then add the dependency to your module:
 
@@ -59,6 +67,14 @@ Then add the dependency to your module:
         implementation(libs.kommons.cache)
     }
     ```
+
+=== "File"
+
+    Under Development
+
+=== "KTOR"
+
+    Under Development
 
 ## 🛠️ Usage
 
@@ -110,3 +126,58 @@ suspend fun putCachedTitle(id: Int, title: String) {
         cache.tryPut(id, title)
     }
     ```
+
+## ⚡ Performance Benchmarks
+
+This cache library was built from the ground up for extreme performance and thread safety while supporting all Kotlin Multiplatform targets.
+To prove it, we benchmarked the `InMemoryCache` against other popular KMP caching libraries: Cache4K and Kache.
+
+### 🔍 Methodology
+
+Tests were executed using `kotlinx-benchmark` (JMH) measuring the Average Time (ns/op) (lower is better).
+
+- Cache Sizes: 100, 1000 and 10000 entries
+- Eviction Policy: LRU (Least Recently Used)
+- Workload: Randomized key access on a cache pre-populated to 50% capacity
+- Environments: Both **Blocking** (synchronous `tryGet`/`tryPut`) and **Suspending** (coroutine-safe `get`/`put`) paths were measured
+
+### 📖 Read Performance (`get`)
+
+Measured in nanoseconds per operation (ns/op). Lower is better.
+
+|         Library        | Cache Size | Blocking | Suspending |
+|:----------------------:|:----------:|----------|------------|
+| iNKraft/Cache          | 100        | 65       | 174        |
+|                        | 1000       | 69       | 191        |
+|                        | 10000      | 87       | 196        |
+| MayakaApps/Kache       | 100        | 33       | 170        |
+|                        | 1000       | 33       | 179        |
+|                        | 10000      | 40       | 197        |
+| ReactiveCircus/cache4k | 100        | 7648     | 6470       |
+|                        | 1000       | 6998     | 6417       |
+|                        | 10000      | 6897     | 7365       |
+
+### ✍️ Write Performance (`put`)
+
+Measured in nanoseconds per operations (ns/op). Lower is better.
+
+|         Library        | Cache Size | Blocking | Suspending |
+|:----------------------:|:----------:|----------|------------|
+| iNKraft/Cache          | 100        | 72       | 199        |
+|                        | 1000       | 89       | 210        |
+|                        | 10000      | 115      | 258        |
+| MayakaApps/Kache       | 100        | N/A      | 192        |
+|                        | 1000       | N/A      | 195        |
+|                        | 10000      | N/A      | 239        |
+| ReactiveCircus/cache4k | 100        | 15245    | 13065      |
+|                        | 1000       | 12904    | 13754      |
+|                        | 10000      | 12348    | 12689      |
+
+(Note: MayakaApps/Kache does not expose a blocking put function.)
+
+### 💡 Key Takeaways
+
+1. **Outperforms:** iNKraft/Cache outperforms ReactiveCircus/cache4k by **~100x** on reads and **~170x** on writes
+2. **Coroutines & Thread Safety:** While MayakaApps/Kache is slightly faster, it comes with a cost of exceptions, crashes and lost data in high concurrency scenarios ([see issue #239](https://github.com/MayakaApps/Kache/issues/239){target="_blank"})
+3. **Blazing Fast Synchronous Paths:** Need data immediately on the Main Thread? The `tryGet` and `tryPut` operations execute in under 100 nanoseconds, making them practically invisible to your frame rendering process
+4. **Target Support:** Unlike the other library iNKraft/Cache supports **all** KMP targets
