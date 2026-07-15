@@ -1,0 +1,10 @@
+# Cache
+
+> A high-performance, coroutine-based cache library for Kotlin Multiplatform. It is designed for high concurrency and thread-safety, offering flexible configurations for size, time and policy-based eviction.
+
+## Core Documentation
+
+- [Overview](/projects/cache/): Introduction, supported targets, and performance benchmarks.
+- [InMemory](/projects/cache/core): The foundational L1 cache. Ultra-fast, Mutex-backed, non-blocking fallback mechanisms, and advanced time-to-live (TTL) configurations.
+- [File](/projects/cache/file): A crash-safe, append-only journaled disk cache. Native zero-allocation DataSize syntax, serialization codecs, and optional L1 pairing.
+- [Ktor](/projects/cache/ktor): A ready-to-use adapter for Ktor Client HTTP caching. Automatically calculates real HTTP body byte sizes to evict data intelligently.

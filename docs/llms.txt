@@ -1,0 +1,27 @@
+# iNKraft
+
+> High-quality, production-ready Kotlin projects for every platform. iNKraft is a collection of high-quality Kotlin Multiplatform (KMP) libraries and plugins designed to solve the hardest parts of KMP development.
+
+## Core Documentation
+
+- [Home](/): The main landing page for iNKraft.
+- [About](/about): Overview of iNKraft and its creator.
+- [Setup](/about/setup): General setup instructions for iNKraft libraries.
+- [Articles](/articles): Articles and Blog posts about Kotlin and programming in general.
+
+## Projects
+
+- [Cache](/projects/cache/llms.txt): High-performance, coroutine-based cache library for Kotlin Multiplatform.
+- [Kotlin Native Interface](/projects/kni): Kotlin Multiplatform library designed to simplify and unify JNI development.
+- [Locale](/projects/locale): A simple, serializable and modern Kotlin data class for handling locales.
+- [NanoId](/projects/nanoid): Fast, secure, and URL-friendly unique ID generator.
+- [Sealed](/projects/sealed): Modern KSP-based alternative to sealed-enum for Kotlin Multiplatform.
+
+## Optional
+
+- [License](/about/license): License information.
+- [Sponsors Overview](/sponsors/): Overview of sponsorship for iNKraft.
+- [Sponsors Access](/sponsors/access): Information about sponsor access management.
+- [Sponsors Payment](/sponsors/payment): Information about payment and billing.
+- [Sponsors Privacy](/sponsors/privacy): Privacy policy for sponsors.
+- [Sponsors Runtime](/sponsors/runtime): Runtime and cancellation policies.

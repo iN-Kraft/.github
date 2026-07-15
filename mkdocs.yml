@@ -108,6 +108,7 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: pink
+      accent: pink
       toggle:
         icon: lucide/sun
         name: Switch to dark mode
@@ -116,6 +117,7 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: pink
+      accent: pink
       toggle:
         icon: lucide/moon
         name: Switch to light mode
