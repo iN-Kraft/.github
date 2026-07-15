@@ -1,4 +1,5 @@
 ---
+icon: octicons/cache-24
 tags:
   - Android
   - JVM
@@ -24,6 +25,30 @@ The following targets are supported:
 | **Web**            | `js`, `wasmJs`                                |
 | **Native & Other** | `androidNative`, `linux`, `mingw`, `wasmWasi` |
 
+## 📦 Available Modules
+
+Choose the caching layers you need for your project:
+
+<div class="grid cards" markdown>
+- :octicons-cpu-24:{ .middle } InMemoryCache
+
+    ---
+
+    The foundational L1 cache. Ultra-fast, Mutex-backed, non-blocking fallback mechanisms, and advanced time-to-live (TTL) configurations.
+
+- :octicons-file-zip-24:{ .middle } FileCache
+
+    ---
+
+    A crash-safe, append-only journaled disk cache. Native zero-allocation `DataSize` syntax, serialization codecs, and optional L1 pairing.
+
+- :octicons-server-24:{ .middle } KtorCache
+
+    ---
+
+    A ready-to-use adapter for Ktor Client HTTP caching. Automatically calculates real HTTP body byte sizes to evict data intelligently.
+</div>
+
 ## ✨ Features
 
 - **Coroutine-Based:** Utilizes `suspend` functions for non-blocking cache operations
@@ -39,94 +64,6 @@ The following targets are supported:
 - **Flexible API:** Provides both `suspend` functions for atomic operations non-suspending `try...` methods for fast, non-blocking lookups
 - **AutoClosable:** Can be used in `use { ... }` blocks to release resources if needed.
 
-## 🚀 Installation
-
-Integration using Version Catalog is highly recommended for aligned version usage.
-
-=== "InMemory"
-
-    ```toml
-    [libraries]
-    kommons-cache = { group = "dev.datlag.kommons", name = "cache", version.ref = "cache" }
-    ```
-
-=== "File"
-
-    Under Development
-
-=== "KTOR"
-
-    Under Development
-
-Then add the dependency to your module:
-
-=== "InMemory"
-
-    ```kotlin
-    dependencies {
-        implementation(libs.kommons.cache)
-    }
-    ```
-
-=== "File"
-
-    Under Development
-
-=== "KTOR"
-
-    Under Development
-
-## 🛠️ Usage
-
-You can initialize the cache with a type-safe DSL. The `maxSize` parameter is mandatory, while additional configuration options are optional.
-
-=== "InMemory"
-
-    ```kotlin
-    val cache = InMemoryCache<Int, String>(maxSize = 100) {
-        evictionPolicy = EvictionPolicy.LRU
-        expireAfterWriteDuration = 15.minutes
-    }
-    ```
-
-The cache interface follows the suspend-first approach, providing common methods for cache as suspending operations.
-
-```kotlin
-suspend fun getCachedTitle(id: Int): String {
-    return cache.get(id) ?: "Default Title"
-}
-
-suspend fun putCachedTitle(id: Int, title: String) {
-    cache.put(id, title)
-}
-```
-
-The `get` and `put` methods are also available as operator functions, like this:
-
-```kotlin
-suspend fun getCachedTitle(id: Int): String {
-    return cache[id] ?: "Default Title"
-}
-
-suspend fun putCachedTitle(id: Int, title: String) {
-    cache[id] = title
-}
-```
-
-=== "InMemory"
-
-    If you are calling the cache from a context where `suspend` is not available, you can use the non-suspending `try...` methods.
-
-    ```kotlin
-    fun getOnMainThread(id: Int): String? {
-        return cache.tryGet(id)
-    }
-
-    fun putOnMainThread(id: Int, title: String) {
-        cache.tryPut(id, title)
-    }
-    ```
-
 ## ⚡ Performance Benchmarks
 
 This cache library was built from the ground up for extreme performance and thread safety while supporting all Kotlin Multiplatform targets.
@@ -140,6 +77,11 @@ Tests were executed using `kotlinx-benchmark` (JMH) measuring the Average Time (
 - Eviction Policy: LRU (Least Recently Used)
 - Workload: Randomized key access on a cache pre-populated to 50% capacity
 - Environments: Both **Blocking** (synchronous `tryGet`/`tryPut`) and **Suspending** (coroutine-safe `get`/`put`) paths were measured
+
+!!! warning "Note on Suspending calls"
+
+    Measuring these functions required starting a new coroutine (`runBlocking`) for every single test, which adds an delay to the results.
+    In your actual app, these operations will run significantly faster than what is shown here.
 
 ### 📖 Read Performance (`get`)
 

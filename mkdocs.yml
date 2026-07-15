@@ -5,7 +5,7 @@ site_description: High-quality, production-ready Kotlin projects for every platf
 site_url: https://datlag.dev
 
 # Copyright
-copyright: Copyright &copy; 2025 Jeff Retz
+copyright: Copyright &copy; 2025 - 2026 Jeff Retz
 
 # Extra
 extra:
@@ -79,7 +79,11 @@ nav:
       - Setup: about/setup.md
       - License: about/license.md
   - Projects:
-      - Cache: projects/cache.md
+      - Cache:
+          - Overview: projects/cache/
+          - InMemory: projects/cache/core.md
+          - File: projects/cache/file.md
+          - Ktor: projects/cache/ktor.md
       - Kotlin Native Interface: projects/kni.md
       - Locale: projects/locale.md
       - NanoId: projects/nanoid.md

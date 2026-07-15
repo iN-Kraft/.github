@@ -1,6 +1,6 @@
 # Payment & Billing
 
-Since we host the repositories on GitHub including the packages, [GitHub Sponsors](https://github.com/sponsors/DatL4g) is a natural fit for handling all financial transactions, as well as for access management to the repositories.
+Since we host the repositories on GitHub including the packages, [GitHub Sponsors](https://github.com/sponsors/iN-Kraft) is a natural fit for handling all financial transactions, as well as for access management to the repositories.
 
 Therefore, to become a sponsor of iNKraft, a GitHub account is mandatory.
 
@@ -23,7 +23,7 @@ For questions regarding payment issues or for more detailed information about yo
 ## Discounts
 
 Unfortunately, we can't offer discounts.
-To ensure that everyone in the community can afford to become a sponsor, we keep the barrier low and set prices as low as possible, starting at [$4](https://github.com/sponsors/DatL4g) a month for personal accounts and small teams (up to 100 employees) and at [$9](https://github.com/sponsors/DatL4g) a month for organizations.
+To ensure that everyone in the community can afford to become a sponsor, we keep the barrier low and set prices as low as possible, starting at [$4](https://github.com/sponsors/iN-Kraft) a month for personal accounts and small teams (up to 100 employees) and at [$9](https://github.com/sponsors/iN-Kraft) a month for organizations.
 
 ## Billing cycle
 

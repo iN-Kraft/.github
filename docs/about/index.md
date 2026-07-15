@@ -21,7 +21,7 @@ We provide clean, "common" KMP APIs for complex tasks, built with a unique focus
 
     High-performance, coroutine-based cache library for Kotlin Multiplatform.
 
-    [:octicons-arrow-right-24: Getting started](../projects/cache.md)
+    [:octicons-arrow-right-24: Getting started](../projects/cache/index.md)
 
 -   __Kotlin Native Interface__
 

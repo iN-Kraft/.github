@@ -5,7 +5,7 @@ If you're curious about the duration of your sponsorship and the cancellation pr
 
 ## Runtime
 
-[Sponsorships](https://github.com/sponsors/DatL4g) remain valid as long as monthly or yearly subscriptions are active and only expire when you cancel the sponsorship or when your payment method expires.
+[Sponsorships](https://github.com/sponsors/iN-Kraft) remain valid as long as monthly or yearly subscriptions are active and only expire when you cancel the sponsorship or when your payment method expires.
 
 ## Cancellation
 
