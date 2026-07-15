@@ -49,7 +49,7 @@ The Software includes, but it not limited to:
 - Organization Tier ($9): Required for entities with more than 100 employees.
 - Audit Right: iNKraft reserves the right to verify sponsorship tier eligibility based on public employee data.
 
-### 3. Prohibited Exploitation
+### 3. Prohibited Usage
 
 You are strictly prohibited from redistributing the Software, or any derivative work thereof, in a manner that competes with the original Software.
 This includes but is not limited to:
@@ -68,7 +68,7 @@ As a condition of this license, any modifications, bug fixes, or enhancements ma
 ### 5. Termination & Surviving Rights
 
 - Cessation of Updates: Upon termination of sponsorship, your right to access the repository and receive new updates or security patches ceases.
-- Version Snapshots: You retain a prepetual, non-transferable right to continue using the specific version of the Software obtained during your last active billing cycle for existing and future products, provided the terms of Section 3 (Prohibited Exploitation) are continuously met.
+- Version Snapshots: You retain a prepetual, non-transferable right to continue using the specific version of the Software obtained during your last active billing cycle for existing and future products, provided the terms of Section 3 (Prohibited Usage) are continuously met.
 
 ### 6. Disclaimer of Warranty
 
