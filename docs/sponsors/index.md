@@ -11,7 +11,7 @@ iNKraft Sponsors is packed with additional projects that are exclusively availab
 Our sponsors currently enjoy access to the following sponsorware projects. New projects are added regularly, so be sure to check back from time to time to stay updated.
 
 - [x] [Cache](../projects/cache/index.md)
-- [x] [Kotlin Native Interface](../projects/kni.md)
+- [x] [Kotlin Native Interface](../projects/kni/index.md)
 - [x] [Locale](../projects/locale.md)
 - [x] [Sealed](../projects/sealed.md)
 

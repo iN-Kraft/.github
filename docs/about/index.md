@@ -29,7 +29,7 @@ We provide clean, "common" KMP APIs for complex tasks, built with a unique focus
 
     Kotlin Multiplatform library designed to simplify and unify JNI development.
 
-    [:octicons-arrow-right-24: Take a look](../projects/kni.md)
+    [:octicons-arrow-right-24: Take a look](../projects/kni/index.md)
 
 
 -   __Locale__

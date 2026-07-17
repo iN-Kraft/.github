@@ -108,7 +108,10 @@ nav:
           - InMemory: projects/cache/core.md
           - File: projects/cache/file.md
           - Ktor: projects/cache/ktor.md
-      - Kotlin Native Interface: projects/kni.md
+      - Kotlin Native Interface:
+          - Overview: projects/kni/
+          - Buffers: projects/kni/buffers.md
+          - "Arrays & Utilities": projects/kni/utils.md
       - Locale: projects/locale.md
       - NanoId: projects/nanoid.md
       - Sealed: projects/sealed.md
