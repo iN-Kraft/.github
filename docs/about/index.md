@@ -38,7 +38,7 @@ We provide clean, "common" KMP APIs for complex tasks, built with a unique focus
 
     A simple, serializable and modern Kotlin data class for handling locales.
 
-    [:octicons-arrow-right-24: First steps](../projects/locale.md)
+    [:octicons-arrow-right-24: First steps](../projects/locale/index.md)
 
 -   __NanoId__
 

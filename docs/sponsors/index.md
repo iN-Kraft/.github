@@ -12,7 +12,7 @@ Our sponsors currently enjoy access to the following sponsorware projects. New p
 
 - [x] [Cache](../projects/cache/index.md)
 - [x] [Kotlin Native Interface](../projects/kni/index.md)
-- [x] [Locale](../projects/locale.md)
+- [x] [Locale](../projects/locale/index.md)
 - [x] [Sealed](../projects/sealed.md)
 
 [Sponsor on GitHub](https://github.com/sponsors/iN-Kraft){ .md-button .md-button--primary }

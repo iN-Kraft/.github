@@ -104,15 +104,18 @@ nav:
       - Terms of Service: terms.md
   - Projects:
       - Cache:
-          - Overview: projects/cache/
+          - Overview: projects/cache/index.md
           - InMemory: projects/cache/core.md
           - File: projects/cache/file.md
           - Ktor: projects/cache/ktor.md
       - Kotlin Native Interface:
-          - Overview: projects/kni/
+          - Overview: projects/kni/index.md
           - Buffers: projects/kni/buffers.md
           - "Arrays & Utilities": projects/kni/utils.md
-      - Locale: projects/locale.md
+      - Locale:
+          - Overview: projects/locale/index.md
+          - "Countries & Continents": projects/locale/countries.md
+          - "Serialization & Features": projects/locale/features.md
       - NanoId: projects/nanoid.md
       - Sealed: projects/sealed.md
   - Sponsors:
