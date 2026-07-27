@@ -117,7 +117,7 @@ nav:
           - "Countries & Continents": projects/locale/countries.md
           - "Serialization & Features": projects/locale/features.md
       - NanoId: projects/nanoid.md
-      - Sealed: projects/sealed.md
+      - Shadow Enum: projects/shadow-enum.md
   - Sponsors:
       - Overview: sponsors/
       - Access management: sponsors/access.md

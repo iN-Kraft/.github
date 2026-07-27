@@ -48,13 +48,13 @@ We provide clean, "common" KMP APIs for complex tasks, built with a unique focus
 
     [:octicons-arrow-right-24: Learn More](../projects/nanoid.md)
 
--   __Sealed__
+-   __Shadow Enum__
 
     ---
 
     Modern KSP-based alternative to [sealed-enum](https://github.com/livefront/sealed-enum){target="_blank"} for Kotlin Multiplatform.
 
-    [:octicons-arrow-right-24: Get going](../projects/sealed.md)
+    [:octicons-arrow-right-24: Get going](../projects/shadow-enum.md)
 
 
 </div>
