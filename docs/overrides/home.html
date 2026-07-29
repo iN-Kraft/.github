@@ -14,10 +14,50 @@
       flex-grow: 1;
       align-items: center;
       align-content: center;
+      padding-top: 3rem;
+    }
+    
+    .mdx-hero {
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
     
     .mdx-hero__content {
-      margin: 0 0.8rem 1.2rem;
+      margin: 0 auto 1.2rem;
+      max-width: 65rem;
+      padding: 0 1rem;
+    }
+    
+    .mdx-hero__content h1 {
+      margin-bottom: 1rem;
+    }
+    
+    .mdx-hero__content p {
+      color: var(--md-default-fg-color--light);
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .mdx-hero__buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .mdx-hero__buttons .md-button {
+      padding: 0.8rem 2.5rem;
+      border-radius: 2rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+      margin: 0;
+    }
+
+    .mdx-hero__buttons .md-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
   </style>
   <section class="mdx-container">
@@ -26,12 +66,49 @@
         <div class="mdx-hero__content">
           <h1>Reliable foundations for evolving apps</h1>
           <p>Making low-level, native programming feel as simple and common as high-level Kotlin.</p>
-          <a href="{{ 'about/' }}" title="About - Overview" class="md-button md-button--primary">
-            Quick start
-          </a>
-          <a href="{{ 'sponsors/' | url }}" title="iNKraft Sponsors" class="md-button">
-            Become Sponsor
-          </a>
+          <div class="mdx-hero__buttons">
+            <a href="{{ 'about/' }}" title="About - Overview" class="md-button md-button--primary">
+              Quick start
+            </a>
+            <a href="{{ 'sponsors/' | url }}" title="iNKraft Sponsors" class="md-button">
+              Become Sponsor
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mdx-homepage-content">
+        <div class="mdx-mission">
+          <p>
+            At iN-Kraft, we empower developers by bridging the gap between high-level application logic and low-level native architectures. Our production-ready Kotlin Multiplatform (KMP) libraries eliminate platform-specific boilerplate and dramatically reduce the surface area for bugs, allowing you to focus on shipping reliable apps.
+          </p>
+        </div>
+
+        <div class="mdx-projects-grid">
+          <div class="mdx-project-card">
+            <h3>Caching</h3>
+            <p>A versatile caching infrastructure supporting in-memory, file-based, and Ktor-integrated strategies across all platforms.</p>
+            <a href="{{ 'projects/cache/' | url }}">Explore Cache</a>
+          </div>
+          <div class="mdx-project-card">
+            <h3>Kotlin Native Interface</h3>
+            <p>A powerful suite of tools providing unified access to memory buffers, complex arrays, and system-level utilities for peak performance.</p>
+            <a href="{{ 'projects/kni/' | url }}">Explore KNI</a>
+          </div>
+          <div class="mdx-project-card">
+            <h3>Locale & I18N</h3>
+            <p>Comprehensive multi-platform support for countries, continents, and region-specific features with powerful serialization.</p>
+            <a href="{{ 'projects/locale/' | url }}">Explore Locale</a>
+          </div>
+          <div class="mdx-project-card">
+            <h3>Shadow Enum</h3>
+            <p>An innovative approach to enumerated types in Kotlin, providing flexible, extensible, and high-performance categorizations.</p>
+            <a href="{{ 'projects/shadow-enum/' | url }}">Explore Shadow Enum</a>
+          </div>
+          <div class="mdx-project-card">
+            <h3>NanoId</h3>
+            <p>A fast, secure, and URL-friendly unique ID generator leveraging cryptographically strong native APIs.</p>
+            <a href="{{ 'projects/nanoid/' | url }}">Explore NanoId</a>
+          </div>
         </div>
       </div>
     </div>

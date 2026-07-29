@@ -54,3 +54,64 @@
 .proxmox {
     color: #e57000;
 }
+
+.mdx-homepage-content {
+    margin: 4rem 0.8rem 2rem;
+    max-width: 65rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.mdx-mission {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--md-default-fg-color--light);
+    margin-bottom: 3.5rem;
+    line-height: 1.6;
+}
+.mdx-projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+.mdx-project-card {
+    border: 1px solid var(--md-default-fg-color--lightest);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    background-color: var(--md-default-bg-color);
+    display: flex;
+    flex-direction: column;
+}
+.mdx-project-card:hover {
+    border-color: var(--md-primary-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.mdx-project-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+.mdx-project-card p {
+    margin: 0 0 1.5rem 0;
+    font-size: 0.95rem;
+    color: var(--md-default-fg-color--light);
+    flex-grow: 1;
+}
+.mdx-project-card a {
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: var(--md-typeset-a-color);
+}
+.mdx-project-card a::after {
+    content: "➔";
+    margin-left: 0.4rem;
+    font-size: 0.8rem;
+    transition: transform 0.2s;
+}
+.mdx-project-card:hover a::after {
+    transform: translateX(4px);
+}
