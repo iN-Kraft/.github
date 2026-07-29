@@ -1,4 +1,6 @@
 ---
+title: "KNI Array Utilities"
+description: "Ensure flawless memory lifecycles when bridging Kotlin primitives and JNI arrays, completely preventing pinned array memory leaks in native code."
 icon: octicons/tools-24
 tags:
   - Android

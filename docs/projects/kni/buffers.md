@@ -1,4 +1,6 @@
 ---
+title: "KNI Direct NIO Buffers"
+description: "Utilize zero-copy Direct NIO Buffers to achieve extreme performance by sharing memory seamlessly between the JVM heap and Kotlin/Native applications."
 icon: octicons/zap-24
 tags:
   - Android

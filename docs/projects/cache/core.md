@@ -1,4 +1,6 @@
 ---
+title: "InMemoryCache"
+description: "An ultra-fast, L1 in-memory caching tier designed for high concurrency with coroutine-friendly Mutex protection."
 icon: octicons/cpu-24
 tags:
   - Android

@@ -1,4 +1,6 @@
 ---
+title: "NanoId for Kotlin Multiplatform"
+description: "A fast, secure, and highly compact Kotlin Multiplatform port of the NanoId library, generating URL-friendly unique IDs as a better alternative to UUIDs."
 tags:
   - Android
   - JVM

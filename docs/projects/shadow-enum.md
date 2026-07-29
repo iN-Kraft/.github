@@ -1,4 +1,6 @@
 ---
+title: "Shadow-Enum via KSP"
+description: "A KSP-based library enabling true enum capabilities for Kotlin sealed classes and interfaces without the massive runtime overhead of standard reflection."
 icon: octicons/list-ordered-24
 tags:
   - Android

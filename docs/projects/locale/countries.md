@@ -1,4 +1,6 @@
 ---
+title: "ISO Countries & Continents"
+description: "Ensure compile-time safety and prevent string bugs with an exhaustive representation of all 249 officially assigned ISO countries using zero-allocation value classes."
 icon: octicons/project-roadmap-24
 tags:
   - Android

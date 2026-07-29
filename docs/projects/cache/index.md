@@ -1,4 +1,6 @@
 ---
+title: "Cache for Kotlin Multiplatform"
+description: "A high-performance, coroutine-based caching library for Kotlin Multiplatform offering memory and disk persistence with thread-safe architecture."
 icon: octicons/cache-24
 tags:
   - Android

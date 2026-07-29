@@ -1,4 +1,6 @@
 ---
+title: "KtorCache Adapter"
+description: "Plug high-performance InMemory or FileCache instances directly into your Ktor HTTP client to optimize network operations and caching."
 icon: octicons/server-24
 tags:
   - Android
@@ -76,3 +78,11 @@ val persistentClient = HttpClient {
     }
 }
 ```
+
+### Choosing the Right Storage Strategy
+
+When deploying your Ktor applications under significant load or in resource-constrained environments, choosing the correct caching strategy is critical.
+
+**InMemory Storage** is exceptionally fast and reduces latency to an absolute minimum. It is best suited for high-throughput, short-lived server processes or when caching small, frequently accessed payloads where disk I/O would become a bottleneck. However, it directly consumes your application's RAM, so configuring the `maxSize` properly is essential to avoid `OutOfMemoryError` under heavy traffic.
+
+**Persistent File Storage**, on the other hand, is the ideal choice for client-side applications (like Android or iOS apps using Kotlin Multiplatform) and edge servers. It ensures that cached responses survive application restarts, significantly improving user experience on poor networks and reducing redundant data transfer costs. While disk access is slower than RAM, modern SSDs and OS-level file caching mitigate most of the performance penalty, making it highly reliable for larger payloads like images, heavy JSON structures, or static assets.

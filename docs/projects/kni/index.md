@@ -1,4 +1,6 @@
 ---
+title: "Kotlin Native Interface (KNI)"
+description: "Unify Java Native Interface (JNI) development across Android, MacOS, Linux, and Windows with a powerful Kotlin library abstracting C-pointers and boilerplate."
 icon: octicons/plug-24
 tags:
   - Android

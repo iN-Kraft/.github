@@ -1,4 +1,6 @@
 ---
+title: "Locale Serialization & Measurement Systems"
+description: "Keep your JSON payloads compliant and minimal with custom KSerializer implementations, and effortlessly determine the proper regional measurement system."
 icon: octicons/package-24
 tags:
   - Android

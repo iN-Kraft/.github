@@ -1,4 +1,6 @@
 ---
+title: "Locale for Kotlin Multiplatform"
+description: "A robust, type-safe drop-in replacement for java.util.Locale that perfectly mirrors the Java API while embracing modern Kotlin multiplatform capabilities."
 icon: octicons/globe-24
 tags:
   - Android

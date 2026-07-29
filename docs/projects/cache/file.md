@@ -1,4 +1,6 @@
 ---
+title: "FileCache Persistence"
+description: "A crash-safe, append-only journaled disk cache for Kotlin Multiplatform, featuring atomic writes and zero-allocation data sizing."
 icon: octicons/file-zip-24
 tags:
   - Android
