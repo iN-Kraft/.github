@@ -2,13 +2,13 @@
 
 **Effective Date:** July 15, 2026
 
-Welcome to the iN-Kraft Developer Hub. By accessing or using this website (the "Site"), you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access the Site.
+Welcome to the iNKraft Developer Hub. By accessing or using this website (the "Site"), you agree to be bound by these Terms of Service. If you disagree with any part of the terms, you may not access the Site.
 
 ## 1. Website Usage vs. Software Licensing
 This Site provides documentation, tutorials, and informational content regarding various software projects.
 
 * **Website Content:** The text, structure, and media on this Site are governed by these Terms of Service.
-* **Software & Code:** Any source code, libraries, or applications downloaded or accessed via links on this Site are governed by their respective licenses (e.g., the iN-Kraft Source-Available License or specific open-source licenses). In the event of a conflict between these Terms and a specific software license, the software license takes precedence regarding the use of that code.
+* **Software & Code:** Any source code, libraries, or applications downloaded or accessed via links on this Site are governed by their respective licenses (e.g., the iNKraft Source-Available License or specific open-source licenses). In the event of a conflict between these Terms and a specific software license, the software license takes precedence regarding the use of that code.
 
 ## 2. Intellectual Property
 Unless otherwise stated, the content, layout, and graphics on this Site are the intellectual property of Jeff Retz. You may read, reference, and link to this documentation. However, you may not scrape, reproduce, or republish the documentation text in its entirety on another domain without explicit permission.

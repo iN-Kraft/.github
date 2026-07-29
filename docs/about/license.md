@@ -9,7 +9,7 @@ This allows us to fund high-quality development while eventually giving to the b
 
 ## iNKraft Source-Available License
 
-Copyright (C) 2026 iN-Kraft / Jeff Retz
+Copyright (C) 2026 iNKraft / Jeff Retz
 
 ### 0. TL;DR
 

@@ -1,6 +1,6 @@
 # Contact
 
-Thank you for visiting my developer hub. Whether you have questions about my open-source libraries, the iN-Kraft Source-Available License, or general inquiries, you can reach me through the channels below.
+Thank you for visiting my developer hub. Whether you have questions about my open-source libraries, the iNKraft Source-Available License, or general inquiries, you can reach me through the channels below.
 
 ## Direct Contact
 
