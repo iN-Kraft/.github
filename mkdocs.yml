@@ -99,9 +99,6 @@ nav:
       - Overview: about/
       - Setup: about/setup.md
       - License: about/license.md
-      - Privacy Policy: privacy.md
-      - Contact: contact.md
-      - Terms of Service: terms.md
   - Projects:
       - Cache:
           - Overview: projects/cache/index.md
@@ -126,6 +123,9 @@ nav:
       - "Runtime & Cancellation": sponsors/runtime.md
   - Articles:
       - Error Handling: articles/kotlin-error-handling.md
+  - Contact: contact.md
+  - Privacy Policy: privacy.md
+  - Terms of Service: terms.md
 
 # Theme
 theme:
