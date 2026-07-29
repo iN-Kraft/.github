@@ -63,6 +63,8 @@
 }
 .mdx-hero {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -77,9 +79,11 @@
     padding: 0 1rem;
 }
 .mdx-hero__content h1 {
+    text-align: center;
     margin-bottom: 1rem;
 }
 .mdx-hero__content p {
+    text-align: center;
     color: var(--md-default-fg-color--light);
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
@@ -117,7 +121,7 @@
 }
 .mdx-projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: 1.5rem;
 }
 .mdx-project-card {
