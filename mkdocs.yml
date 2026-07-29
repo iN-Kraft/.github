@@ -96,10 +96,11 @@ nav:
   - Home:
       - index.md
   - About:
-      - Overview: about/
+      - Overview: about/index.md
       - Setup: about/setup.md
       - License: about/license.md
   - Projects:
+      - Overview: projects/index.md
       - Cache:
           - Overview: projects/cache/index.md
           - InMemory: projects/cache/core.md

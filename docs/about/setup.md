@@ -73,3 +73,7 @@ dependencyResolutionManagement {
 
 Sync the project.
 If your sponsorship is active, dependencies will resolve automatically.
+
+## Next Steps
+
+Now that you've successfully configured your environment, you're ready to start exploring the libraries! Check out our [Projects Overview](../projects/index.md) to discover all the available libraries and how to use them.
